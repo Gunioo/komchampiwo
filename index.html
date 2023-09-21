@@ -1,69 +1,79 @@
-
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="Content-Language" content="pl">
-    <meta name="Reply-to" content="KochamPiwo@Beer.pl">
-    <meta name="Title" content="PL 0:2 ALB">
-    <meta name="page-topic" content="Miszka, Kiszka, Pudliszka">
-    <meta name="Creation_Date" content="2023-09-12">
-    <meta name="Keywords" content="Miszka, Kiszka, Pudliszka">
-    <meta name="Description" content="XDDDDDDDDDDDDDDDDDDDDD">
-    <meta name="Robots" content="index, follow">
-    <title>nowayingpro</title>
-      <style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOJA STRONA</title>
+    <style>
+        /* Dodaj stylizację według potrzeb */
         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #080101;
+            color: rgb(0, 0, 0);
             text-align: center;
+            padding: 20px;
         }
-
-        #container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        nav {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 10px;
         }
-
-        img {
-            max-width: 100%;
-            max-height: 100%;
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
         }
     </style>
-  </head>
-  <body>
-    <h1>Paweł Toruń</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Big Beer photo</a></li>
-                <li><a href="#">Mieszkam w Toruniu</a></li>
-                <li><a href="#">Toruń to moje miasto</a></li>
-            </ul>
-        </nav>
+</head>
+<body>
+    <header>
+        <img src="giphy.gif" alt="Logo Firmy" style="width: 400px; height: 300px;">
+        <h1>Moje Logo</h1>
+        <img src="giphy.gif" alt="Zdjęcie" style="width: 0px; height: 0px;">
+        <p>Siema</p>
     </header>
-    
-    <main>
-        <section>
-            <h2>O mnie</h2>
-            <p>Toruń to piękne miasto, każdy powinien tam przyjechać</p>
-            <p style="text-indent: 20px; text-align: justify;">
-              Toruń - portal miejski. DzienDobryTorun.pl to toruński portal informacyjny. Wiadomości z Torunia i okolic, sport, region, biznes, kultura, edukacja
-            </p>
-            
-        </section>
-        <div id="container">
-            <img src="piwko dla roja.jpg" alt="POV MUJ FIREND BEST UWU">
-        </div>
-        
-        <section>
-            <h2>Kontakt</h2>
-            <p>Kontakt to KochamPiwo@Beer.pl</p>
-        </section>
-    </main>
-    
+    <nav>
+        <a href="https://www.mercedes-benz.pl/passengercars.html">O Nas</a>
+        <a href="https://www.mercedes-benz.pl/passengercars/services/offers.html">Serwis</a>
+        <a href="https://www.frelik.mercedes-benz.pl/passengercars/about-us/contact.html?gclid=Cj0KCQjw06-oBhC6ARIsAGuzdw3Ogde4OLeSqHw6Y1LTGdBKScg9VYvyiiAOV74mYaZ6t3QUGPydNBEaAuGCEALw_wcB&gclsrc=aw.ds">Kontakt</a>
+    </nav>
+    <section>
+        <h2>Strona Główna</h2>
+		<img src="5dcd1b9b583a0f4d7528f040.jpg" alt="Mercedes w124" style="width: 727px; height: 423px;"> <img src="xmercedes-124-600km.jpg.pagespeed.ic.gdqiRIVx-J.webp" alt="Mercedes w124" style="width: 727px; height: 423px;"> <img src="XDD314eae635b7698d22c703044c403522.gif" alt="Mercedes w124" style="width: 270px; height: 423px;">
+        <p>Tutaj znajdziesz informacje o naszej firmie. <br>
+            <br>
+            <br>
+            <br>
+            Mężczyźni niezależnie od siebie pracowali nad modelem pojazdu. W grudniu 1883 roku Benz założył w Mannheim firmę Benz & Co, natomiast w listopadzie 1890 roku powstała w Cannstatt firma Daimler-Motoren-Gesellschaft (DMG) należąca do Gottlieba Daimlera. Dwa lata po założeniu przedsiębiorstwa, Benz skonstruował silnik, który odpowiadał za napęd pojazdu trójkołowego. Jazda próbna zakończyła się zderzeniem ze ścianą. Gottliebowi Daimlerowi w pracach projektowych pomagał Wilhelm Maybach. Za cel postawili sobie udoskonalenie silnika Augusta Otto. W 1883 roku opatentowali szybkoobrotowy silnik spalinowy, a dwa lata później posłużył on za napęd jednośladu.
+        </p>
+    </section>
     <footer>
-        <p>&copy; Pozdro od Paweł Wojanowice</p>
+        <p>&copy; 2023 Gunioo Click</p>
+        <p>Data: <span id="currentDate"></span></p>
+        <script>
+            // JavaScript, który automatycznie ustawia aktualną datę
+            const currentDateElement = document.getElementById('currentDate');
+            const currentDate = new Date();
+            const year = currentDate.getFullYear();
+            const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+            const day = currentDate.getDate().toString().padStart(2, '0');
+            currentDateElement.textContent = `${day}.${month}.${year}`;
+        </script>
     </footer>
-  <h1>Kocham sora salaha</h1>
-  </body>
+</body>
 </html>
+
