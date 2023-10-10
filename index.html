@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kocham Boxdela</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #070607;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #000000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #020202;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #fa9dcf;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fa9dcf;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fa9dcf;
+        }
+
+        td:first-child {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        td:last-child {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        #video-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .video {
+            margin: 10px;
+            flex-basis: calc(50% - 20px);
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px;
+        }
+
+        #image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #image-container img {
+            width: 560px;
+            height: 315px;
+        }
+
+        /* Styl dla kontenera z audio */
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 80px;
+        }
+
+        /* Styl dla audio */
+        .center-container audio {
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="masny.jpg" alt=":3" width="500" height="auto">
+        <h1>OMAMAMA JOMA JOMAMAMALE</h1>
+    </header>
+    <section>
+        <h2>Boxdel jest niewinny</h2>
+        <p>Z nią gruda nie smakuje cos nie tak to z gangiem sie podziele tym co mam ubieram kominiare melo trwa puszczam lady gage nanana wyruszamy w miasto ty i ja robi sie juz masno wstaje czas </p>
+        
+        <h2>COCO chanel na dobry dzien </h2>
+    
+    
+    <section id="video-container">
+        <div class="video">
+           <iframe width="1280" height="720" src="https://www.youtube.com/embed/5ropQoa0tgk" title="Masno - GANG (oficjalny teledysk)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/zkBRXf4MkCs" title="MASNY BEN - NANANENE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+           <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100038756511179%2Fvideos%2F1039629600784403%2F&show_text=false&width=267&t=0" width="430" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </div>
+    </section>
+    
+    <!-- Kontener z audio wyśrodkowany na środku strony -->
+    <div class="center-container">
+        <h2>ziomek tłumaczy sie ze nie jest pedofilem ocenka pls</h2>
+        <audio controls autoplay>
+            <source src="DUBIEL ODPOWIADA NA FILM WARDĘGI! BĘDZIE POZEW #shorts.mp3" type="audio/mp3">
+            Twoja przeglądarka nie obsługuje odtwarzacza audio.
+        </audio>
+    </div>
+
+    <div id="image-container">
+        <img src="424828.3.jpg" alt="idol z malenkosci" width="560" height="315">
+    </div>
+  
+    <footer>
+        <p>Maksymilian Lipiec</p>
+        <p>Data: <span id="currentDate"></span></p>
+    </footer> 
+    <script>
+        const currentDateElement = document.getElementById("currentDate");
+        const currentDate = new Date();
+        currentDateElement.textContent = currentDate.toLocaleDateString();
+    </script>
+</body>
+</html>
