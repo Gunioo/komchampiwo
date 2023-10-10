@@ -3,38 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona Startowa</title>
+    <title>Kocham Boxdela</title>
     <style>
         body {
             font-family: Arial, sans-serif;
         }
+
         header {
-            background-color: #635858;
+            background-color: #ef42f5;
             color: #fff;
             padding: 10px;
             text-align: center;
         }
+
         nav {
-            background-color: #444;
+            background-color: #000000;
             text-align: center;
             padding: 10px;
         }
+
         nav a {
-            color: #fff;
+            color: #020202;
             text-decoration: none;
             margin: 10px;
         }
+
         section {
             padding: 20px;
             max-width: 800px;
             margin: 0 auto;
         }
+
         footer {
-            background-color: #444;
+            background-color: #ef42f5;
             color: #fff;
             text-align: center;
             padding: 10px;
         }
+
         table {
             width: 80%;
             margin: 0 auto;
@@ -42,145 +48,122 @@
             border-radius: 10px;
             overflow: hidden;
         }
+
         th, td {
             padding: 10px;
             text-align: center;
         }
+
         th {
-            background-color: #3498db;
+            background-color: #fa9dcf;
             color: white;
         }
+
         tr:nth-child(even) {
-            background-color: #f2f2f2;
+            background-color: #fa9dcf;
         }
+
         tr:nth-child(odd) {
-            background-color: #e5e5e5;
+            background-color: #fa9dcf;
         }
+
         td:first-child {
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
         }
+
         td:last-child {
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
         }
-        .header2 {
-            text-align: center;
-            font-size: 40px;
+
+        #video-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
         }
-        .header3 {
+
+        .video {
+            margin: 10px;
+            flex-basis: calc(50% - 20px);
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px;
+        }
+
+        #image-container {
             text-align: center;
+            margin-top: 20px;
+        }
+
+        #image-container img {
+            width: 560px;
+            height: 315px;
+        }
+
+        /* Styl dla kontenera z audio */
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 80px;
+        }
+
+        /* Styl dla audio */
+        .center-container audio {
+            margin-top: 80px;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="elo.jpg" alt="elo.jpg" width="600" height="auto">
-        <h1>Maksymilian Lipiec</h1>
+        <img src="masny_ben_jygyqr.webp" alt="X D" width="500" height="auto">
+        <h1>OMAMAMA JOMA JOMAMAMALE</h1>
     </header>
     <section>
-        <div class="header3">
-        <h2 class="header2">Witamy na stronie piwek</h2>
-        <p>Proponowane piwka dla sora Salaha</p>
-        <h2>Lista filmów wartych obejrzenia</h2>
+        <h2>Boxdel jest niewinny</h2>
+        <p>Z nią gruda nie smakuje cos nie tak to z gangiem sie podziele tym co mam ubieram kominiare melo trwa puszczam lady gage nanana wyruszamy w miasto ty i ja robi sie juz masno wstaje czas </p>
+        
+        <h2>COCO chanel na dobry dzien </h2>
+    
+    
+    <section id="video-container">
+        <div class="video">
+           <iframe width="1280" height="720" src="https://www.youtube.com/watch?v=3X-iqFRGqbc&pp=ygUIc3BpbiByYXQ%3D" title="tańczący rogal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-        <table border="1">
-            <thead>
-                <tr>
-                    <!DOCTYPE html>
-<html>
-<head>
-    <style>
-        table {
-            font-family: Arial, sans-serif;
-            border-collapse: collapse;
-            width: 50%;
-        }
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-    </style>
-</head>
-<body>
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        table {
-            font-family: Arial, sans-serif;
-            border-collapse: collapse;
-            width: 50%;
-        }
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-    </style>
-<table>
-    <thead>
-        <tr>
-            <th>Rodzaj</th>
-            <th>Nazwa Piwka</th>
-            <th>Rok produkcji</th>
-            <th>Ocena 0/10</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Bohemian Pilsner</td>
-            <td>Zwierzyniec</td>
-            <td>1950</td>
-            <td>100/10</td>
-        </tr>
-        <tr>
-            <td>Nieznany</td>
-            <td>Romper Strong</td>
-            <td>2004</td>
-            <td>2/10</td>
-        </tr>
-        <tr>
-            <td rowspan="2">Pils</td>
-            <td>Perła export</td>
-            <td>1946</td>
-            <td>8/10</td>
-        </tr>
-        <tr>
-            <td>Łomża</td>
-            <td>2000</td>
-            <td>10/10</td>
-        </tr>
-    </tbody>
-</table>
-</head>
-</html>
+        <div class="video">
+            <iframe width="1280" height="720" src="https://www.youtube.com/watch?v=zkBRXf4MkCs&pp=ygUIbmFuYW5lbmU%3D" title="NANANENE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+           <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100038756511179%2Fvideos%2F1039629600784403%2F&show_text=false&width=267&t=0" width="430" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </div>
     </section>
+    
+    <!-- Kontener z audio wyśrodkowany na środku strony -->
+    <div class="center-container">
+        <h2>ziomek tłumaczy sie ze nie jest pedofilem ocenka pls</h2>
+        <audio controls autoplay>
+            <source src="DUBIEL ODPOWIADA NA FILM WARDĘGI! BĘDZIE POZEW #shorts.mp3" type="audio/mp3">
+            Twoja przeglądarka nie obsługuje odtwarzacza audio.
+        </audio>
+    </div>
+
+    <div id="image-container">
+        <img src="424828.3 (1).jpg" alt="idol z malenkosci" width="560" height="315">
+    </div>
+  
     <footer>
-        <p>© 2023 Maksymilian Lipiec</p>
+        <p>Maksymilian Lipiec</p>
         <p>Data: <span id="currentDate"></span></p>
-    </footer>
+    </footer> 
     <script>
-
-function aktualizujDate() {
-			const currentDateElement = document.getElementById("currentDate");
-			const aktualnaData = new Date();
-			currentDateElement.textContent = aktualnaData.toLocaleDateString() + " " + aktualnaData.toLocaleTimeString();
-		}
-
-		// Wywołanie funkcji aktualizującej datę na początku
-		aktualizujDate();
-
-		// Ustawienie interwału, aby odświeżać datę co sekundę
-		setInterval(aktualizujDate, 1000);
-	
-</script>
+        const currentDateElement = document.getElementById("currentDate");
+        const currentDate = new Date();
+        currentDateElement.textContent = currentDate.toLocaleDateString();
+    </script>
 </body>
 </html>
