@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koncert Travisa</title>
+<link rel="stylesheet" href="styl.css">
+
+</head>
+<body>
+    <form action="mailto: maks.lipiec@o2.pl" method="post">
+        <h2>Koncet Travisa Scotta</h2>
+
+        <div class="main">
+            <label for="imie">Podaj imię: </label>
+            <input type="text" id="imie" name="imie" placeholder="imię" required><br><br>
+            <label for="nazwisko">Podaj nazwisko: </label>
+            <input type="text" id="nazwisko" name="nazwisko" placeholder="nazwisko" required><br><br>
+            <label for="email">Podaj e-mail: </label>
+            <input type="text" id="email" name="email" placeholder="e-mail" required><br><br>
+            <label for="wiek">Podaj swój wiek: </label>
+            <input type="number" id="wiek" name="wiek" placeholder="wiek" required><br><br>
+            <br>
+            <label for="data">Podaj datę koncertu</label>
+            <select id="data" name="data" required>
+                <option value="04.11.2023">04.11.2023</option>
+                <option value="25.11.2023">25.11.2023</option>
+                <option value="13.01.2024">13.01.2024</option>
+                <option value="03.02.2024">03.02.2024</option>
+            </select><br><br>
+
+            <h3>Piosenki które chcesz usłyszeć</h3>
+            <label><input type="checkbox" id="p1" value="p1" name="p1"></label>THE SCOTTS<br>
+            <label><input type="checkbox" id="p2" value="p2" name="p2"></label>CAN'T SAY<br>
+            <label><input type="checkbox" id="p3" value="p3" name="p3"></label>I KNOW ?<br>
+            <label><input type="checkbox" id="p4" value="p4" name="p4"></label>FE!N<br>
+            <label><input type="checkbox" id="p5" value="p5" name="p5"></label>MY EYES<br>
+
+            <h3>Wybierz co chcesz zjeść: </h3>
+            <select name="jedzenie" id="jedzenie" multiple="multiple" size="6">
+                <optgroup label="jedzenie">
+                    <option>pizza</option>
+                    <option>burger</option>
+                    <option>frytki</option>
+                    <option>popcorn</option>
+                    <option>nachosy</option>
+                </optgroup>
+                <optgroup label="napoje">
+                    <option>woda</option>
+                    <option>sok</option>
+                    <option>cola</option>
+                    <option>mirinda</option>
+                    <option>piwo (tylko zwierzynieckie)</option>
+                </optgroup>
+            </select>
+                <br><br>
+
+                <label>
+                    <input type="checkbox" name="zgoda" required>Wyrażam zgodę na przetwarzanie danych
+                </label>
+                <br><br>
+                <centre><input type="submit" value="wyślij"></centre>
+
+        </div>
+
+
+
+    </form>
+    
+</body>
+</html>
