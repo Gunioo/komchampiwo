@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Świąteczna Strona</title>
+  <style>
+    /* stylizacja elementów */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #e4572e;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    nav {
+      background-color: #4c4c4c;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    main {
+      padding: 20px;
+    }
+    .kolędy {
+      list-style-type: none;
+      padding: 0;
+    }
+    .kolędy li {
+      margin-bottom: 10px;
+    }
+    .kolędy a {
+      color: #e4572e;
+    }
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .zdjęcie {
+      margin: 10px;
+      text-align: center;
+    }
+    .gra {
+      margin-bottom: 20px;
+    }
+    .przepis {
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #4c4c4c;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Witaj na stronie świątecznej!</h1>
+    <img src="santa.jpg" alt="Mikołaj" width="400">
+  </header>
+  <nav>
+    <a href="#kolędy">Kolędy</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#gry">Gry</a>
+    <a href="#przepisy">Przepisy</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <main>
+    <section id="kolędy">
+      <h2>Kolędy</h2>
+      <ul class="kolędy">
+        <li>
+          <a>Jingle Bells</a>
+          <audio src="Bobby Helms - Jingle Bell Rock.mp3" controls></audio>
+        </li>
+        <li>
+          <a>Silent Night</a>
+          <audio src="Silent Night with Lyrics ｜ Christmas Carol.mp3" controls></audio>
+        </li>
+        <li>
+          <a>O Holy Night</a>
+          <audio src="Oh Holy Night - HomeTown.mp3" controls></audio>
+        </li>
+      </ul>
+    </section>
+    <section id="galeria">
+      <h2>Galeria</h2>
+      <div class="galeria">
+        <div class="zdjęcie">
+          <img src="choinka.jpg" alt="Choinka" width="400">
+          <p>Świąteczna choinka</p>
+        </div>
+        <div class="zdjęcie">
+          <img src="roblox-santa-claus.gif" alt="roblox" width="400">
+          <p>Święty mikołaj</p>
+        </div>
+        <div class="zdjęcie">
+          <img src="bmw.jpg" alt="Prezenty" width="400">
+          <p>memik dla sora</p>
+        </div>
+      </div>
+    </section>
+    <section id="gry">
+      <h2>Gry</h2>
+      <div class="gra">
+        <h3>Łamigłówka świąteczna</h3>
+        <p>Tutaj znajduje się opis łamigłówki.</p>
+      </div>
+      <div class="gra">
+        <h3>Krzyżówka Bożonarodzeniowa</h3>
+        <p>Tutaj znajduje się opis krzyżówki.</p>
+      </div>
+    </section>
+    <section id="przepisy">
+      <h2>Przepisy</h2>
+      <div class="przepis">
+        <h3>Ciasto piernikowe</h3>
+        <ul>
+          <li>Składniki: mąka, miód, przyprawy, jajka</li>
+          <li>Sposób przygotowania:
+            <ol>
+              <li>Zmieszaj wszystkie składniki.</li>
+              <li>Włóż ciasto do formy i piecz przez 30 minut w temperaturze 180°C.</li>
+              <li>Gotowe ciasto udekoruj lukrem.</li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+      <div class="przepis">
+        <h3>Gorąca czekolada</h3>
+        <ul>
+          <li>Składniki: mleko, czekolada, bita śmietana, posypka czekoladowa</li>
+          <li>Sposób przygotowania:
+            <ol>
+              <li>Podgrzej mleko, dodaj posiekaną czekoladę i mieszaj do rozpuszczenia.</li>
+              <li>Nalej gorącą czekoladę do kubków i udekoruj bitą śmietaną oraz posypką czekoladową.</li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>W razie pytań i sugestii, skontaktuj się z nami:</p>
+      <p>Maksymilian Lipiec: sigma.sigma@o2.pl</p>
+      <p>Kiszka Modliszka: anna@example.com</p>
+    </section>
+  </main>
+  <footer>
+    <p>Strona stworzona przez Maksymiliana Lipca(Gunioo)</p>
+    <a href="https://facebook.com">Facebook</a>
+    <a href="https://twitter.com">Twitter</a>
+  </footer>
+</body>
+</html>
