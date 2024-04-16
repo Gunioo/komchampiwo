@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocena Wiedzy</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        #result {
+            border: 2px solid red;
+            padding: 30px;
+            font-size: 24px;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Pytanie jak oceniasz swoją wiedzę?</h1>
+    <form id="knowledgeForm">
+        <input type="number" id="knowledgeInput" min="0" max="100" placeholder="Podaj wiedzę w procentach">
+        <button type="button" onclick="checkKnowledge()">Sprawdź mnie</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        function checkKnowledge() {
+            const knowledgeInput = document.getElementById('knowledgeInput').value;
+            let grade;
+
+            if (knowledgeInput === '') {
+                grade = 'Wprowadź wartość!';
+            } else if (knowledgeInput >= 100) {
+                grade = 'Ocena: 6 Ultra-kujon';
+            } else if (knowledgeInput >= 90) {
+                grade = 'Ocena: 5 Giga-kujon';
+            } else if (knowledgeInput >= 75) {
+                grade = 'Ocena: 4 Giga-kujon';
+            } else if (knowledgeInput >= 50) {
+                grade = 'Ocena: 3 Giga-Kicha';
+            } else if (knowledgeInput >= 30) {
+                grade = 'Ocena: 2 Giga-luzak';
+            } else {
+                grade = 'Ocena: 1 Mega-Down';
+            }
+
+            document.getElementById('result').textContent = grade;
+        }
+    </script>
+    <img src="p90236642-highres-the-bm-408e274.webp" alt="Najlepsza autko">
+    <img src="f2fee18928e2a527a800fe311ba4a955.gif" alt="Najlepszy kot">
+</body>
+</html>
