@@ -1,0 +1,53 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    width: 100%;
+}
+
+#header{
+    display: flex;
+  }
+  
+  #lewa1{
+  background-color: blue;
+  height: 50px;
+  width: 70%;
+  }
+  #prawa1{
+    background-color: brown;
+    height: 50px;
+    width: 30%;
+    }
+  
+  #main{
+    display: flex;
+  }
+  #nwm{
+    background-color: aqua;
+    width: 40%;
+  }
+  #lewa2{
+    background-color: white;
+    height: 300px;
+    }
+  #srodek{
+    background-color: purple;
+    height: 500px;
+    }
+  #prawa2{
+    background-color: pink;
+    height: 800px;
+    width: 60%;
+    }
+  #footer{
+    background-color: black;
+    height: 30px;
+    }
