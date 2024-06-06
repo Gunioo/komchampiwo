@@ -1,0 +1,17 @@
+<form>
+    Wpisz liczbę: <input id="number" type="number">
+    <button type="button" onclick="checkNumber()">Sprawdź</button>
+  </form>
+  <div id="numberResult"></div>
+  
+  <script>
+  function checkNumber() {
+    var number = document.getElementById("number").value;
+    if (number % 2 == 0) {
+      document.getElementById("numberResult").innerHTML = "Liczba jest parzysta";
+    } else {
+      document.getElementById("numberResult").innerHTML = "Liczba jest nieparzysta";
+    }
+  }
+  </script>
+  
