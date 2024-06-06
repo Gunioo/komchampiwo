@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Formularze</title>
+</head>
+<body>
+
+<!-- Formularz sprawdzania wieku -->
+<form>
+  Wpisz swój wiek: <input id="age" type="number">
+  <button type="button" onclick="checkAge()">Sprawdź</button>
+</form>
+<div id="ageResult"></div>
+<img id="image" style="display: none;" src="https://media.tenor.com/lCKwsD2OW1kAAAAi/happy-cat-happy-happy-cat.gif" alt="Image">
+<img id="image2" style="display: none;" src="https://media.tenor.com/y4sm38ArtSwAAAAe/sus-cat.png" alt="Image2">
+
+<!-- Formularz sprawdzania liczby -->
+<form>
+  Wpisz liczbę: <input id="number" type="number">
+  <button type="button" onclick="checkNumber()">Sprawdź</button>
+</form>
+<div id="numberResult"></div>
+
+<!-- Formularz sprawdzania hasła -->
+<form>
+  Wpisz hasło: <input id="password" type="password">
+  <button type="button" onclick="checkPassword()">Sprawdź</button>
+</form>
+<div id="passwordResult"></div>
+
+<script>
+function checkAge() {
+  var age = document.getElementById("age").value;
+  
+  // Ukryj oba obrazki przed sprawdzeniem wieku
+  document.getElementById("image").style.display = "none";
+  document.getElementById("image2").style.display = "none";
+
+  // Sprawdzenie, czy wartość została wpisana
+  if (age === "") {
+    document.getElementById("ageResult").innerHTML = "Proszę wpisać wiek.";
+    return;
+  }
+
+  if (age >= 18) {
+    document.getElementById("ageResult").innerHTML = "Jesteś pełnoletni";
+    document.getElementById("image").style.display = "block";
+  } else {
+    document.getElementById("ageResult").innerHTML = "Jesteś niepełnoletni";
+    document.getElementById("image2").style.display = "block";
+  }
+}
+
+function checkNumber() {
+  var number = document.getElementById("number").value;
+  if (number === "") {
+    document.getElementById("numberResult").innerHTML = "Proszę wpisać liczbę.";
+    return;
+  }
+  
+  if (number % 2 == 0) {
+    document.getElementById("numberResult").innerHTML = "Liczba jest parzysta";
+  } else {
+    document.getElementById("numberResult").innerHTML = "Liczba jest nieparzysta";
+  }
+}
+
+function checkPassword() {
+  var password = document.getElementById("password").value;
+  if (password === "") {
+    document.getElementById("passwordResult").innerHTML = "Proszę wpisać hasło.";
+    return;
+  }
+  
+  if (password.length >= 8) {
+    document.getElementById("passwordResult").innerHTML = "Hasło jest wystarczająco długie";
+  } else {
+    document.getElementById("passwordResult").innerHTML = "Hasło jest za krótkie";
+  }
+}
+</script>
+
+</body>
+</html>
+
+  
