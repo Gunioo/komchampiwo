@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwinkyWinky</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img src="images/logos.png" alt="Logo" style="max-width: 100px; margin-bottom: 20px;">
+        <!-- Ekran wstępny -->
+        <section id="intro">
+            <h1>Witaj na platformie <b>TwinkyWinky!</b></h1>
+            <p>Jest to platforma pomagająca nauczycielom motywować uczniów ze szkół prywatnych do działań oraz inicjatyw pozaszkolnych. Dołącz teraz!</p>
+            <center> <button class="btn btn-primary">Wybierz swoją klasę</button> </center>
+        </section>
+        
+        <!-- Lista dostępnych aktywności -->
+        <section id="activities" class="mt-5">
+            <h2>Dostępne aktywności</h2>
+            <div class="form-group">
+                <label for="sort">Sortuj według:</label>
+                <select id="sort" class="form-control">
+                    <option value="date">Data</option>
+                    <option value="points">Punkty</option>
+                    <option value="name">Nazwa</option>
+                </select>
+            </div>
+            <div id="activity-list" class="list-group"></div>
+            <p><h4><u>REKLAMA:</u> Marzysz o stworzeniu idealnego teamu?</h4> <button onclick="location.href='reklama.html'" class="btn btn-primary">Kliknij i zobacz jak!</button></p>
+        </section>
+        
+        <!-- Ranking -->
+        <section id="ranking" class="mt-5">
+            <h2>Ranking</h2>
+            <ul id="ranking-list" class="list-group"></ul>
+        </section>
+        
+        <!-- Nagrody -->
+        <section id="rewards" class="mt-5">
+            <h2>Nagrody</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nazwa nagrody</th>
+                        <th>Cena w punktach</th>
+                    </tr>
+                </thead>
+                <tbody>
+                     <tr>
+                        <td>Voucher zakupowy do lokalnej cukierni "Słodkie ciastko" na 25 PLN</td>
+                        <td>85 pkt</td>
+                    </tr>
+                    <tr>
+                        <td>Bluza z Deloitte</td>
+                        <td>100 pkt</td>
+                    </tr>
+                    <tr>
+                        <td>Zgrzewka napojów Tymbark - 12 sztuk</td>
+                        <td>150 pkt</td>
+                    </tr>
+                     <tr>
+                        <td>Książka Adama Sulkowskiego "Extreme Entrepreneurship"</td>
+                        <td>250 pkt</td>
+                    </tr>
+                     <tr>
+                        <td>Dzień otwarty w siedzibie lokalnej telewizji</td>
+                        <td>400 pkt</td>
+                    </tr>
+                     <tr>
+                        <td>Online warsztat z pisania książek z noblistką Olgą Tokarczuk</td>
+                        <td>500 pkt</td>
+                         <tr>
+                        <td>Online warsztat z kodowania z programistami z Microsoft</td>
+                        <td>500 pkt</td>
+                         <tr>
+                        <td>Wycieczka na konferencję edukacyjną w Warszawie</td>
+                        <td>700 pkt</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- Profil ucznia -->
+        <section id="student-profile" class="mt-5">
+            <h2>Profil Ucznia</h2>
+            <img src="images/avatar.jpg" alt="Avatar" style="max-width: 100px; margin-bottom: 20px;">
+            <p>Imię: <span id="student-name"><b>Jan Kowalski</b></span></p>
+            <p>Szkoła: <span id="student-school"><b>International School of Poznań</b></span></p>
+            <p>Wykonane zadania: <span id="student-tasks"><b>5</b></span></p>
+            <p>Liczba punktów: <span id="student-points"><b>100</b></span></p>
+        </section>
+        
+        <!-- Kontakt -->
+        <section id="contact" class="mt-5">
+            <h2>Kontakt</h2>
+            <p>W razie problemów prosimy o kontakt pod adresem email: twinky.winky.platform@gmail.com</p>
+        </section>
+    </div>
+</body>
+</html>
