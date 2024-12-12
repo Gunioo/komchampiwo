@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oblicz BMI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            margin-top: 50px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005f75;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator BMI</h1>
+        <label for="weight">Waga (kg):</label>
+        <input type="number" id="weight" placeholder="Podaj swoją wagę w kilogramach">
+        <label for="height">Wzrost (m):</label>
+        <input type="number" step="0.01" id="height" placeholder="Podaj swój wzrost w metrach">
+        <button onclick="calculateBMI()">Oblicz BMI</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function calculateBMI() {
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value);
+
+            if (!weight || !height || height <= 0) {
+                document.getElementById('result').textContent = "Podaj poprawne wartości wagi i wzrostu.";
+                return;
+            }
+
+            const bmi = weight / (height * height);
+            let status;
+
+            if (bmi < 18.5) {
+                status = "Niedowaga";
+            } else if (bmi >= 18.5 && bmi < 24) {
+                status = "Waga prawidłowa";
+            } else if (bmi >= 24 && bmi < 29) {
+                status = "Nadwaga";
+            } else {
+                status = "Otyłość";
+            }
+
+            document.getElementById('result').textContent = `Twoje BMI wynosi ${bmi.toFixed(2)}. Status: ${status}`;
+        }
+    </script>
+</body>
+</html>
